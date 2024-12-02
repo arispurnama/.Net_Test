@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Categories";
+}
+
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<div class="d-flex flex-column m-3">
+    <div class="table-wrapper mt-4">
+        <div class="d-flex justify-content-between m-2">
+            <h3>Kategori</h3>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal" (click)="smallModal.show()">
+                +Add New
+            </button>
+        </div>
+        <table id="table-kategori" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th width="180px">Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@Html.Partial("AddCategory")
+@Html.Partial("EditCategory")
+<script>
+    var table = $('#table-kategori').DataTable({
+        scrollY: "400px",
+        scrollCollapse: true,
+        ajax: function (data, callback, settings) {
+            $.ajax({
+                url: '/api/category',
+                type: 'GET',
+                data: {
+                    start: data.start,
+                    length: data.length
+                },
+                success: function (data) {
+                    callback({
+                        data: data.data,
+                        recordsTotal: data.Total,
+                        recordsFiltered: data.Total
+                    });
+                },
+                error: function () {
+                    console.error("Failed to load data");
+                }
+            });
+        },
+        language: {
+            paginate: {
+                previous: "<",
+                next: ">"
+            }
+        },
+        columns: [
+            { data: 'id', render: (data, type, row, meta) => meta.row + 1 },
+            { data: 'name' },
+            {
+                render: function (data, type, row) {
+                    return `<button class="btn btn-primary btn-sm edit-product"
+                                    data-id="${row.id}"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#editCategoryModal">Edit</button>
+                                        <button type="button" class="btn btn-labeled btn-danger btn-table btn-danger-table btn-sm" onclick="onDelete('${row.id}', 'category', '#table-kategori')"><span class="btn-label">Delete</button>`;
+                }
+            }
+        ],
+        columnDefs: [
+            { "defaultContent": "-", "targets": "_all" }
+        ]
+    });
+</script>

@@ -1,0 +1,469 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\categories\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\categories\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\products\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\products\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\controllers\\view\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:controllers\\view\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\controllers\\view\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:controllers\\view\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\controllers\\api\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:controllers\\api\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\categories\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\categories\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\products\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\products\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\controllers\\api\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:controllers\\api\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\services\\categorys\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:services\\categorys\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\services\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:services\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\services\\icategorieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:services\\icategorieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\contract\\pagination\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:contract\\pagination\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\contract\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:contract\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\contract\\responses\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:contract\\responses\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\contract\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:contract\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\migrations\\20241130101956_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:migrations\\20241130101956_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|d:\\folder titip aris\\test\\mii-btn\\application\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DB7B21-704D-4ED2-8513-758B9C37CC85}|Application.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddCategory.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\AddCategory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\AddCategory.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\AddCategory.cshtml",
+              "RelativeToolTip": "Views\\Categories\\AddCategory.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T16:16:12.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T08:25:31.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T16:14:54.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\AddProduct.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\AddProduct.cshtml",
+              "RelativeToolTip": "Views\\Products\\AddProduct.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T09:18:38.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\View\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\View\\CategoriesController.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\View\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\View\\CategoriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T16:21:51.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\Api\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Api\\CategoryController.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\Api\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\Api\\CategoryController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:56:42.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\View\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\View\\ProductsController.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\View\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\View\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T08:41:19.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\Api\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Api\\ProductController.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\Api\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\Api\\ProductController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwFsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:56:37.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditProduct.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\EditProduct.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\EditProduct.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Products\\EditProduct.cshtml",
+              "RelativeToolTip": "Views\\Products\\EditProduct.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T14:32:58.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditCategory.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\EditCategory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\EditCategory.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Categories\\EditCategory.cshtml",
+              "RelativeToolTip": "Views\\Categories\\EditCategory.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T16:26:32.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\Categorys\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Services\\Categorys\\CategoryService.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\Categorys\\CategoryService.cs",
+              "RelativeToolTip": "Services\\Categorys\\CategoryService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:37:41.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\Products\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Products\\ProductService.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\Products\\ProductService.cs",
+              "RelativeToolTip": "Services\\Products\\ProductService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAUwFgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:45:21.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICategorieService.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\ICategorieService.cs",
+              "RelativeDocumentMoniker": "Services\\ICategorieService.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\ICategorieService.cs",
+              "RelativeToolTip": "Services\\ICategorieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T12:21:04.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\IProductService.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Services\\IProductService.cs",
+              "RelativeToolTip": "Services\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:41:42.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaginationResponse.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Pagination\\PaginationResponse.cs",
+              "RelativeDocumentMoniker": "Contract\\Pagination\\PaginationResponse.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Pagination\\PaginationResponse.cs",
+              "RelativeToolTip": "Contract\\Pagination\\PaginationResponse.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwBEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T17:25:22.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T12:51:48.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductRequest.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Request\\ProductRequest.cs",
+              "RelativeDocumentMoniker": "Contract\\Request\\ProductRequest.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Request\\ProductRequest.cs",
+              "RelativeToolTip": "Contract\\Request\\ProductRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:42:45.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T16:15:01.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductResponse.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Responses\\ProductResponse.cs",
+              "RelativeDocumentMoniker": "Contract\\Responses\\ProductResponse.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Responses\\ProductResponse.cs",
+              "RelativeToolTip": "Contract\\Responses\\ProductResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T15:43:38.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T08:56:20.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryResponse.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Responses\\CategoryResponse.cs",
+              "RelativeDocumentMoniker": "Contract\\Responses\\CategoryResponse.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Contract\\Responses\\CategoryResponse.cs",
+              "RelativeToolTip": "Contract\\Responses\\CategoryResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:45:29.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T11:55:43.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T08:49:25.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T08:55:07.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20241130101956_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Migrations\\20241130101956_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241130101956_InitialCreate.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Migrations\\20241130101956_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20241130101956_InitialCreate.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:33:42.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T10:20:58.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T08:44:34.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Folder Titip Aris\\test\\MII-BTN\\Application\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T08:43:49.829Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

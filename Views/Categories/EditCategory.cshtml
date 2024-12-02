@@ -1,0 +1,79 @@
+﻿<!-- Modal Edit -->
+<div class="modal fade" id="editCategoryModal" tabindex="-1" aria-labelledby="editCategoryModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editCategoryModalLabel">Edit Category</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="EditCategory" method="post" id="editCategoryForm">
+                    <input type="hidden" id="editCategoryId" name="Id">
+                    <div class="form-group mb-3">
+                        <label for="editName">Name</label>
+                        <input type="text" class="form-control" id="editName" name="Name" required>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#editCategoryModal').on('show.bs.modal', function (event) {
+            let button = $(event.relatedTarget);
+            let CategoryId = button.data('id');
+
+            $.ajax({
+                url: '/api/category/ById?Id=' + CategoryId,
+                type: 'GET',
+                success: function (data) {
+                    let Category = data.data;
+                    console.log("Get By id ", Category);
+                    $("#editCategoryId").val(Category.id);
+                    $("#editName").val(Category.name);
+                },
+                error: function () {
+                    Swal.fire('Oops!', 'Failed to fetch Category details', 'error');
+                }
+            });
+        });
+        
+        // Menangani form submit untuk menyimpan perubahan
+        $('#editCategoryForm').on('submit', function (e) {
+            e.preventDefault();
+            let button = $(event.relatedTarget);
+            let CategoryId = $("#editCategoryId").val();
+
+            let payload = {
+                "Id": $("#editCategoryId").val(),
+                "name": $("#editName").val(),
+            };
+
+            $.ajax({
+                url: '/api/category?Id=' + CategoryId,
+                type: 'PATCH',
+                contentType: 'application/json',
+                data: JSON.stringify(payload),
+                success: function () {
+                    $('#editCategoryModal').modal('toggle');
+                    Swal.fire('Good job!', "Berhasil disimpan", 'success');
+
+                    $("#editCategoryForm").trigger("reset");
+
+                    location.reload();
+                    // Log untuk memverifikasi bahwa tabel diperbarui
+                    console.log("DataTable reloaded successfully");
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    Swal.fire('Oops!', 'Failed to edit Category: ' + errorThrown, 'error');
+                }
+            });
+        });
+    });
+</script>

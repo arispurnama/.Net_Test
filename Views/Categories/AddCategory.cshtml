@@ -1,0 +1,65 @@
+﻿<!-- Modal Add-->
+<div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addCategoryModalLabel">Add Categorie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="addCategoryForm">
+                    <div class="form-group mb-3">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#addCategoryForm').on('submit', function (e) {
+            e.preventDefault();
+
+            let payload = {
+                "Name": $("#Name").val(),
+            };
+
+            $.ajax({
+                url: '/api/category/Add',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(payload),
+                success: function (data) {
+                    $('#addCategoryModal').modal('toggle');
+                    Swal.fire(
+                        'Good job!',
+                        "Berhasil",
+                        'success'
+                    );
+
+                    $("#addCategoryForm").trigger("reset");
+                    // $('#table-Category').DataTable().ajax.reload(null, false);
+
+                    location.reload();
+                    // Log to verify if the table is reloaded
+                    console.log("DataTable reloaded successfully");
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    // Menangani error
+                    Swal.fire(
+                        'Oops!',
+                        'Failed to add Category: ' + errorThrown,
+                        'error'
+                    );
+                }
+            });
+        });
+
+    });
+</script>

@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Product";
+}
+
+<div class="d-flex flex-column m-3">
+    <div class="table-wrapper mt-4 g-2 flex-column">
+        <div class="d-flex justify-content-between m-2">
+            <h3>List Product</h3>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal" (click)="smallModal.show()">
+                +Add New
+            </button>
+        </div>
+        <div></div>
+        <div>
+            <table id="table-product" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th width="180px">Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@Html.Partial("AddProduct")
+@Html.Partial("EditProduct")
+<script>
+    
+    var table = $('#table-product').DataTable({
+        scrollY: "400px",
+        scrollCollapse: true,
+        ajax: function (data, callback, settings) {
+            $.ajax({
+                url: '/api/product',
+                type: 'GET',
+                data: {
+                    start: data.start,
+                    length: data.length
+                },
+                success: function (data) {
+                    callback({
+                        data: data.data,
+                        recordsTotal: data.Total,
+                        recordsFiltered: data.Total
+                    });
+                },
+                error: function () {
+                    console.error("Failed to load data");
+                }
+            });
+        },
+        language: {
+            paginate: {
+                previous: "<",
+                next: ">"
+            }
+        },
+        columns: [
+            { data: 'id', render: (data, type, row, meta) => meta.row + 1 },
+            { data: 'name' },
+            { data: 'price' },
+            { data: 'description' },
+            { data: 'categoryName' },
+            {
+                render: function (data, type, row) {
+                    return `<button class="btn btn-primary btn-sm edit-product"
+                                data-id="${row.id}"
+                                data-bs-toggle="modal"
+                                data-bs-target="#editProductModal">Edit</button>
+                                <button type="button" class="btn btn-labeled btn-danger btn-table btn-danger-table btn-sm" onclick="onDelete('${row.id}', 'product', '#table-product')"><span class="btn-label">Delete</button>`;
+                }
+            }
+        ],
+        columnDefs: [
+            { "defaultContent": "-", "targets": "_all" }
+        ]
+    });
+    
+
+</script>

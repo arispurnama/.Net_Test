@@ -1,0 +1,103 @@
+﻿<!-- Modal Add-->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="AddProduct" method="post" id="addProductForm">
+                    <div class="form-group mb-3">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" name="Name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="Description">Description</label>
+                        <textarea class="form-control" id="Description" name="Description" required></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="Price">Price</label>
+                        <input type="number" class="form-control" id="Price" name="Price" step="0.01" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="productCategory" class="form-label">Category</label>
+                        <select class="form-select" id="productCategory" name="categoryId" required>
+                            <!-- Options will be dynamically loaded here -->
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '/api/category',
+            type: 'GET',
+            success: function (data) {
+                console.log("data categori : ", data);
+                let categoryDropdown = document.getElementById('productCategory');
+
+                data.data.forEach(function (category) {
+                    let option = document.createElement('option'); 
+                    option.value = category.id; 
+                    option.textContent = category.name; 
+                    categoryDropdown.appendChild(option);
+                });
+               
+            },
+            error: function () {
+                console.error('Failed to load categories');
+            }
+        });
+
+        // Menangani form submit
+        $('#addProductForm').on('submit', function (e) {
+            e.preventDefault();
+
+            let payload = {
+                "Name": $("#Name").val(),
+                "Description": $("#Description").val(),
+                "Price": $("#Price").val(),
+                "CategoryId": $("#productCategory").val()
+            };
+
+            $.ajax({
+                url: '/api/product/Add',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(payload),
+                success: function (data) {
+                    $('#addProductModal').modal('toggle');
+                    Swal.fire(
+                        'Good job!',
+                        "Berhasil",
+                        'success'
+                    );
+
+                    $("#addProductForm").trigger("reset");
+                    // $('#table-product').DataTable().ajax.reload(null, false);
+
+                    location.reload();
+                    // Log to verify if the table is reloaded
+                    console.log("DataTable reloaded successfully");
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    // Menangani error
+                    Swal.fire(
+                        'Oops!',
+                        'Failed to add product: ' + errorThrown,
+                        'error'
+                    );
+                }
+            });
+        });
+
+    });
+</script>

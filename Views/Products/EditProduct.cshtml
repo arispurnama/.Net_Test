@@ -1,0 +1,115 @@
+﻿<!-- Modal Edit -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="EditProduct" method="post" id="editProductForm">
+                    <input type="hidden" id="editProductId" name="Id">
+                    <div class="form-group mb-3">
+                        <label for="editName">Name</label>
+                        <input type="text" class="form-control" id="editName" name="Name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="editDescription">Description</label>
+                        <textarea class="form-control" id="editDescription" name="Description" required></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="editPrice">Price</label>
+                        <input type="number" class="form-control" id="editPrice" name="Price" step="0.01" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editProductCategory" class="form-label">Category</label>
+                        <select class="form-select" id="editProductCategory" name="categoryId" required>
+                            
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#editProductModal').on('show.bs.modal', function (event) {
+            let button = $(event.relatedTarget);
+            let productId = button.data('id');
+
+            $.ajax({
+                url: '/api/product/ById?Id=' + productId,
+                type: 'GET',
+                success: function (data) {
+                    let product = data.data;
+                    console.log("Get By id ", product);
+                    $("#editProductId").val(product.id);
+                    $("#editName").val(product.name);
+                    $("#editDescription").val(product.description);
+                    $("#editPrice").val(product.price);
+                    $("#editProductCategory").val(product.categoryId);
+                },
+                error: function () {
+                    Swal.fire('Oops!', 'Failed to fetch product details', 'error');
+                }
+            });
+        });
+        $.ajax({
+            url: '/api/category',
+            type: 'GET',
+            success: function (data) {
+                let categoryDropdown = document.getElementById('editProductCategory');;
+                categoryDropdown.innerHTML = '';
+                data.data.forEach(function (category) {
+                    let option = document.createElement('option');
+                    option.value = category.id;
+                    option.textContent = category.name;
+
+                    categoryDropdown.appendChild(option);
+                });
+            },
+            error: function () {
+                console.error('Failed to load categories');
+            }
+        });
+        // Menangani form submit untuk menyimpan perubahan
+        $('#editProductForm').on('submit', function (e) {
+            e.preventDefault();
+            let button = $(event.relatedTarget);
+            let productId = $("#editProductId").val();
+
+            let payload = {
+                "Id": $("#editProductId").val(),
+                "Name": $("#editName").val(),
+                "Description": $("#editDescription").val(),
+                "Price": $("#editPrice").val(),
+                "CategoryId": $("#editProductCategory").val()
+            };
+
+            $.ajax({
+                url: '/api/product?Id=' + productId,
+                type: 'PATCH',
+                contentType: 'application/json',
+                data: JSON.stringify(payload),
+                success: function () {
+                    $('#editProductModal').modal('toggle');
+                    Swal.fire('Good job!', "Berhasil disimpan", 'success');
+
+                    $("#editProductForm").trigger("reset");
+
+                    location.reload();
+                    // Log untuk memverifikasi bahwa tabel diperbarui
+                    console.log("DataTable reloaded successfully");
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    Swal.fire('Oops!', 'Failed to edit product: ' + errorThrown, 'error');
+                }
+            });
+        });
+    });
+</script>
